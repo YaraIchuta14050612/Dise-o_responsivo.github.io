@@ -78,7 +78,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
-    height: calc(60vh - 80px);
+    height: calc(55vh - 80px);
     text-align: center;
 }
 
