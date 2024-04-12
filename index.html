@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace"><img src="img/logo2.png" alt="" class="logo"></a>
+        <ul>
+            <li><a href="#redactores">Redactores</a></li>
+            <li><a href="#oportunidades">Oportunidades</a></li>
+            <li><a href="#anota">Anotadores</a></li>
+            <li><a href="#moderador">Moderadores</a></li>
+            <li><a href="#aprende">Ingles</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br><br><br>
+        <h1>IA: Oportunidad o Riesgo</h1>
+        <p>Es que en serio la
+            transformación del mercado laboral con
+            la llegada de la Inteligencia artificial
+            es radical y afecta claro más a unas
+            profesiones que a otras
+        </p><br><br><br>
+    </header>
+    <div class="slideshow-container">
+<br><br>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/ia1.jpg" style="width:100%">
+          <div class="text">Inteligencia Artificial</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/ia3.jpg" style="width:100%">
+          <div class="text">Inteligencia Artificial</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/ia2.jpg" style="width:100%">
+          <div class="text">Inteligencia Artificial</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    <div class="contenedor"><br>
+        <h2><a name="redactores"></a>Redactores profesionales</h2>
+        <p>Se menciona el caso de Tony, un redactor profesional cuyo trabajo se vio
+            impactado por la capacidad de la IA para producir textos de manera eficiente. La introducción de la IA
+            en la creación de contenidos ha reducido la demanda de textos creados por humanos, lo que ha afectado la
+            industria de redacción profesional.</p>
+    </div>
+    <div class="grid-container">
+        <div>
+            <h2>Tony Elias</h2>
+            <p>Experimentó una disminución en sus encargos y sus ingresos debido a la llegada de la IA, lo que lo
+                llevó a replantear su carrera profesional. A pesar de los desafíos, reconoce que la IA ha sido una
+                revelación para él y destaca la importancia de comprender y adaptarse a los cambios en el mercado
+                laboral.</p>
+        </div>
+        <div><img src="img/tony.png" alt="" class="grid-img"></div>
+    </div>
+    <div class="contenedor">
+        <div>
+            <h1><a name="oportunidades"></a><br>¿Qué oportunidades laborales se están creando gracias a la IA?</h1>
+            <ul>
+                <li>
+                    <h2>Desarrollo de la Industria Tecnológica: </h2>
+                    <p>La IA está impulsando el crecimiento de empresas tecnológicas en regiones como el sur de la
+                        India, donde empresas como Infol están prosperando gracias al trabajo en clasificación de
+                        datos y aprendizaje automático. Esto ha generado oportunidades laborales para personas como
+                        Mujib Coleri, quien pasó de clasificar datos a convertirse en gerente de una empresa con más
+                        de 600 empleados.</p>
+                </li>
+                <li>
+                    <h2>Trabajo en Anotación y Etiquetado de Datos: </h2>
+                    <p>Con el crecimiento del mercado de anotación y etiquetado de datos, se prevé un aumento en la
+                        demanda de personas que categoricen y clasifiquen información para alimentar sistemas de IA.
+                        Países como India, Kenia, Argentina y Filipinas se mencionan como lugares donde los
+                        trabajadores de datos son contratados para realizar estas tareas fundamentales.</p>
+                </li>
+                <li>
+                    <h2>Inclusión Laboral: </h2>
+                    <p>Empresas como Infol priorizan brindar oportunidades laborales a personas con discapacidad y
+                        mujeres, como en el caso de Rosny, lo que demuestra un enfoque inclusivo en la contratación
+                        de personal.</p>
+                </li>
+                <li>
+                    <h2>Emprendimiento Social: </h2>
+                    <p>Iniciativas como la asociación de Vulkan con empresas tailandesas para dar trabajo a personas
+                        con discapacidad muestran cómo la IA puede ser utilizada para crear oportunidades laborales
+                        inclusivas y socialmente responsables.</p><br>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div>
+            <h1><a name="anota"></a>Anotadores de datos</h1>
+            <p>Se destaca el caso de Mujeeb Kolasseri en la India, quien pasó de clasificar datos para empresas
+                tecnológicas
+                a convertirse en gerente de una empresa con más de 600 empleados. La anotación y etiquetado de datos se
+                vuelve fundamental en el desarrollo de la Inteligencia Artificial, creando oportunidades laborales en
+                países como India, Kenia, Argentina y Filipinas.</p>
+        </div>
+        <div>
+            <img src="img/anota.jpeg" alt="" class="grid-img">
+        </div>
+    </div>
+    <div class="contenedor">
+        <div>
+            <h2><a name="moderador"></a><br>Moderadores de Contenido</h2>
+            <p>Se destaca la labor de los moderadores de contenido como trabajadores esenciales para filtrar y eliminar
+                contenido inapropiado en plataformas digitales. A pesar de los avances en IA, todavía se requiere la
+                intervención humana para tareas como eliminar imágenes con violencia, abusos o mensajes de odio en redes
+                sociales.</p>
+            <h2>Creación de sindicatos y lucha por mejores condiciones laborales: </h2>
+            <p>Se menciona la fundación del Sindicato Africano de Moderadores de Contenido, con el objetivo de unir a
+                los jóvenes africanos y trabajar juntos para impulsar cambios en la industria tecnológica. Los
+                moderadores de contenido buscan mejores condiciones laborales y justicia en la tecnología, apoyados por
+                organizaciones como Fox Globe.</p>
+        </div>
+        <div class="mode">
+            <center>
+                <img src="img/mode.jpeg" alt="" class="grid-img">
+            </center>
+        </div>
+    </div>
+    <div class="ingles">
+        <div class="contenedor">
+            <h1><a name="aprende"></a><br>Porque aprender ingles</h1>
+            <ol>
+                <li>
+                    <h3>Idioma de la Programación y la Tecnología: </h3>
+                    <p>El inglés es el idioma predominante en la programación y la industria tecnológica. Muchos de los
+                        recursos, documentación y herramientas relacionadas con la IA están disponibles en inglés, por
+                        lo que tener habilidades en este idioma facilita el acceso a información clave en el campo de la
+                        tecnología.</p>
+                </li>
+                <li>
+                    <h3>Comunicación con Equipos Internacionales</h3>
+                    <p>En un entorno laboral globalizado, es común colaborar con equipos internacionales en proyectos de
+                        IA y tecnología. El inglés suele ser el idioma de comunicación común en estos contextos, lo que
+                        facilita la colaboración efectiva con colegas de diferentes partes del mundo.</p>
+                </li>
+                <li>
+                    <h3>Acceso a Recursos Educativos: </h3>
+                    <p>Muchos cursos, programas de formación y recursos educativos sobre IA y tecnología están
+                        disponibles en inglés. Dominar el idioma permite acceder a una amplia gama de materiales de
+                        aprendizaje y oportunidades de desarrollo profesional en este campo.</p>
+                </li>
+                <li>
+                    <h3>Participación en Comunidades Profesionales: </h3>
+                    <p>Ser parte de comunidades profesionales en el ámbito de la IA y la tecnología a menudo implica
+                        interactuar con expertos y profesionales de todo el mundo. El inglés es el idioma principal en
+                        conferencias, eventos y foros de discusión en estos sectores.</p><br>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="contenedor">
+        <h1><br>Como puede uno adaptarse</h1>
+        <ol>
+            <li>
+                <h3>Desarrollo de habilidades digitales:</h3>
+                <p>Es fundamental adquirir habilidades digitales relevantes para el mercado laboral actual y futuro.
+                    Esto incluye aprender sobre tecnologías emergentes, como la IA, y cómo aplicarlas en diferentes
+                    contextos laborales.</p>
+            </li>
+            <li>
+                <h3>Formación continua:</h3>
+                <p>La capacitación y el aprendizaje continuo son clave para mantenerse actualizado en un entorno laboral
+                    en constante evolución. Participar en cursos de formación, talleres y programas de educación
+                    continua puede ayudar a adquirir nuevas habilidades y conocimientos.</p>
+            </li>
+            <li>
+                <h3>Flexibilidad y adaptabilidad:</h3>
+                <p>Estar dispuesto a adaptarse a los cambios y ser flexible en cuanto a las oportunidades laborales que
+                    surjan. La capacidad de ajustarse a nuevas situaciones y roles puede ser crucial en un mercado
+                    laboral dinámico.</p>
+            </li>
+            <li>
+                <h3>Enfoque en habilidades únicas:</h3>
+                <p>Identificar y desarrollar habilidades únicas que no puedan ser fácilmente reemplazadas por la IA.
+                    Esto puede incluir habilidades blandas como la creatividad, la resolución de problemas y el
+                    pensamiento crítico, que son valiosas en entornos laborales complejos.</p>
+            </li>
+            <li>
+                <h3>Networking y colaboración: </h3>
+                <p>Establecer y mantener una red de contactos profesionales puede ser beneficioso para acceder a nuevas
+                    oportunidades laborales y colaboraciones en un mercado laboral cambiante. La colaboración con otros
+                    profesionales puede generar ideas innovadoras y oportunidades de crecimiento.</p><br>
+            </li>
+        </ol>
+    </div>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logo2.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Estudiante de la carrera de informatica, de primer semestre.</p>
+                <p>Estudiente de la materia de Programación Web INF-113</p>
+            </div>
+            <div class="box">
+                <h2>Redes Sociales</h2>
+                <div class="red-social">
+                    <a href="#">
+                        <i style='font-size:24px' class='fab'>&#xf09a;</i></a>
+                    <a href="#">
+                        <i style='font-size:24px' class='fab'>&#xf16d;</i></a>
+                    <a href="#">
+                        <i style='font-size:24px' class='fab'>&#xf099;</i></a>
+                    <a href="#">
+                        <i style="font-size:24px" class="fa">&#xf16a;</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 INF-113 Programacion Web I | Ichuta Sinka Yara Belen 14050612</small>
+        </div>
+    </footer>
+</body>
+
+</html>
